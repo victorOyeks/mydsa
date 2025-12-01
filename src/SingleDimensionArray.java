@@ -30,7 +30,8 @@ public class SingleDimensionArray {
         }
     }
 
-    public void searchArray(int valueToSearch){
+
+    public void searchArray(int valueToSearch){ // this is an O(N) time complexity
         for (int i = 0; i < array.length; i++){
             if (valueToSearch == array[i]){
                 System.out.println("Value found at index of " + i);
@@ -38,5 +39,15 @@ public class SingleDimensionArray {
             }
         }
         System.out.println("Value not found");
+    }
+
+    // delete value from an array
+    public void deleteValue (int valueToDeleteIndex){
+        try {
+            array[valueToDeleteIndex] = Integer.MIN_VALUE;
+            System.out.println("Value deleted successfully from the array");
+        }catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("The value provided is not in the range of array");
+        }
     }
 }
