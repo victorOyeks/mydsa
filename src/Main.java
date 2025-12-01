@@ -5,8 +5,18 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-//        nestedLoopingSample(10);
-        arrayOfNumbers();
+        SingleDimensionArray sda = new SingleDimensionArray(10);
+        sda.insert(0,0);
+        sda.insert(1,10);
+        sda.insert(2,20);
+        sda.insert(3,40);
+        sda.insert(4,50);
+        sda.insert(5,60);
+        sda.insert(6,70);
+        sda.insert(7,80);
+
+
+        sda.searchArray(80);
     }
 
     // this is a constant time complexity (O)1
