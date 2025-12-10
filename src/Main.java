@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
+        /*
         SingleDimensionArray sda = new SingleDimensionArray(10);
         sda.insert(0,0);
         sda.insert(1,10);
@@ -15,8 +16,25 @@ public class Main {
         sda.insert(6,70);
         sda.insert(7,80);
 
-
         sda.searchArray(80);
+         */
+
+        TwoDimensionalArray tda = new TwoDimensionalArray(3,3);
+
+        tda.insert(0,0,20);
+        tda.insert(0,1,34);
+        tda.insert(0,2,50);
+        tda.insert(1,0,10);
+        tda.insert(1,1,40);
+        tda.insert(1,2,70);
+        tda.insert(2,0,80);
+        tda.insert(2,1,90);
+        tda.insert(2,2,37);
+
+        tda.deleteFromArray(1,2);
+        tda.search(70);
+
+
     }
 
     // this is a constant time complexity (O)1
