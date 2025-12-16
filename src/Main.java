@@ -17,7 +17,7 @@ public class Main {
         sda.insert(7,80);
 
         sda.searchArray(80);
-         */
+
 
         TwoDimensionalArray tda = new TwoDimensionalArray(3,3);
 
@@ -34,6 +34,13 @@ public class Main {
         tda.deleteFromArray(1,2);
         tda.search(70);
 
+         */
+
+        SinglyLinkedList sLL = new SinglyLinkedList();
+        sLL.createSinglyLinkedList(5);
+        System.out.println("Head value of Singly Linked List is: " + sLL.head.value);
+        System.out.println("Tail value of Singly Linked List is: " + sLL.tail.value);
+        System.out.println("Size of Singly Linked List is: " + sLL.size);
 
     }
 
