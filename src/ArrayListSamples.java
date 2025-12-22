@@ -6,10 +6,11 @@ public class ArrayListSamples {
 
     public static void main(String[] args) {
 
-        int[] numbers = {1,3,4,5,6,7,8};
+        int[] numbers = {1,3,10,5,6,7,8};
+        largestNum(numbers);
 //        sumAndProduct(numbers);
 //        printPairs(numbers);
-        reverse(numbers);
+//        reverse(numbers);
         /*
         ArrayList<Integer> numbers = new ArrayList<>();
         numbers.add(1);
@@ -132,5 +133,15 @@ public class ArrayListSamples {
             num[rightIndex] = temp;
         }
         System.out.println("After " + Arrays.toString(num));
+    }
+
+    public static void largestNum (int[] nums) {
+        int largest = Integer.MIN_VALUE;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] > largest) {
+                largest = nums[i];
+            }
+        }
+        System.out.println("Largest Number: " + largest);
     }
 }
