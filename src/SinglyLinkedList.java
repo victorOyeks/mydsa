@@ -30,4 +30,15 @@ public class SinglyLinkedList {
         size = 1;
         return head;
     }
+
+    public void insertInSinglyLinkedList(int nodeValue, int location) {
+        Node node = new Node();
+        node.value = nodeValue;
+        if (head == null){
+            createSinglyLinkedList(nodeValue);
+            return;
+        } else if (location == 0) {
+
+        }
+    }
 }
